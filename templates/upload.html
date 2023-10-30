@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Upload and Download</title>
+</head>
+<body>
+    <h1>Photo Upload and Download</h1>
+    <!-- Form to upload a photo -->
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload Photo">
+    </form>
+    <!-- Form to route user to /list-->
+    <form method="GET" action="/list">
+        <input type="submit" value="List Photos">
+    </form>
+
+</body>
+</html>
