@@ -26,7 +26,12 @@ def upload_file():
     file = request.files['file']
 
     if file.filename == '':
-        return "No selected file"
+        return '''
+        "No selected file"
+        <form method="GET" action="/">
+            <input type="submit" value="Back to Main Page">
+        </form>
+        '''
 
     if file:
         # Save the uploaded file to the upload folder
